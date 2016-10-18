@@ -1,0 +1,44 @@
+.social-link {
+  position: relative;
+  padding-left: 30px;
+}
+
+.social-link--fb::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  background: url("../img/icon-facebook.png");
+}
+
+.social-link--tw::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 21px;
+  height: 20px;
+  background: url("../img/icon-twitter.png");
+}
+
+.social-link--li::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  background: url("../img/icon-linkedin.png");
+}
+
+.social-link--yt::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 21px;
+  height: 20px;
+  background: url("../img/icon-youtube.png");
+}

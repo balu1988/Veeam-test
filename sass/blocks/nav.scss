@@ -1,0 +1,38 @@
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.nav__item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.nav__link {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.nav__link--active {
+  color: #54b948;
+  border-bottom: 2px solid #54b948;
+}
+
+.nav__link--red {
+  padding: 25px 58px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #f13037;
+}

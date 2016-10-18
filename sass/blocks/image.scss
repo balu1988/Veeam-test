@@ -1,0 +1,27 @@
+.image-block {
+  background-color: #ffffff;
+}
+
+.image-block img {
+  display: block;
+  margin: 0 auto;
+}
+
+.image-block--video::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 25%;
+  left: 51%;
+  transform: translateX(-50%);
+  width: 79px;
+  height: 59px;
+  background: url("../img/play-button.jpg") 50% 50% no-repeat;
+}
+
+.image-text {
+  font-family: "Droid Sans", "Arial", sans-serif;
+  text-align: center;
+  font-size: 13px;
+  line-height: 18px;
+}

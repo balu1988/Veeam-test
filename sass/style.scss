@@ -1,0 +1,20 @@
+@import
+  "global/variables",
+  "global/mixins",
+  "global/normalize",
+  "global/base";
+
+@import
+  "blocks/wrapper",
+  "blocks/header",
+  "blocks/suite",
+  "blocks/icon-tick",
+  "blocks/btn",
+  "blocks/container",
+  "blocks/description",
+  "blocks/image",
+  "blocks/nav",
+  "blocks/features",
+  "blocks/footer",
+  "blocks/social-link",
+  "blocks/logo";

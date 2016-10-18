@@ -1,0 +1,27 @@
+.header {
+  min-height: 78px;
+  border-bottom: 4px solid #09b00a;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__logo-block {
+  background-color: #ffffff;
+  width: 940px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.header__blue {
+  background-color: #0067c5;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+
+.header__white {
+  background-color: #ffffff;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}

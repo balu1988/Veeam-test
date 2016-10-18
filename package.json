@@ -1,0 +1,21 @@
+{
+  "name": "Veeam-test",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Тестовое Veeam",
+  "author": "Сардор Акрамов",
+  "devDependencies": {
+    "grunt": "1.0.1",
+    "grunt-browser-sync": "2.2.0",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-sass": "1.2.1",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "scripts": {
+    "build": "grunt build",
+    "start": "npm run build && grunt serve"
+  },
+  "engines": {
+    "node": "6.5"
+  }
+}

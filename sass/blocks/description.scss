@@ -1,0 +1,46 @@
+.description {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.description__left {
+  width: 324px;
+  padding-left: 5px;
+  text-align: center;
+  position: relative;
+}
+
+.description__right {
+  width: 603px;
+}
+
+.description__right p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-left: 26px;
+  margin-top: 0;
+}
+
+.description__links {
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 26px;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.description__link {
+  padding: 0 50px;
+  position: relative;
+  color: #1091c7;
+}
+
+.description__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 31px;
+  height: 32px;
+  background: url("../img/icon-graph.png");
+}
