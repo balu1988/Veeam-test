@@ -31,7 +31,7 @@ module.exports = function(grunt) {
             })
           ]
         },
-        src: "build/css/*.css"
+        src: "css/*.css"
       }
     },
 
