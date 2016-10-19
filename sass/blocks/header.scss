@@ -11,6 +11,10 @@
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
+
+  img {
+    width: 100%;
+  }
 }
 
 .header__blue {
