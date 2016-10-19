@@ -13,6 +13,28 @@ module.exports = function(grunt) {
       }
     },
 
+    postcss: {
+      style: {
+        options: {
+          processors: [
+            require("autoprefixer")({browsers: [
+              "last 1 version",
+              "last 2 Chrome versions",
+              "last 2 Firefox versions",
+              "last 2 Opera versions",
+              "last 2 Edge versions",
+              "IE 11",
+              "IE 10"
+            ]}),
+            require("css-mqpacker")({
+              sort: true
+            })
+          ]
+        },
+        src: "build/css/*.css"
+      }
+    },
+
     browserSync: {
       server: {
         bsFiles: {
@@ -39,5 +61,6 @@ module.exports = function(grunt) {
   grunt.registerTask("serve", ["browserSync", "watch"]);
   grunt.registerTask("build", [
     "sass",
+    "postcss"
   ]);
 };

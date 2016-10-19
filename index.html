@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VAS alliance pages</title>
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -72,7 +71,7 @@
       </div>
     </div>
 
-    <div class="container  container--border">
+    <div class="container  container--download">
       <div class="wrapper">
         <nav class="nav">
           <ul class="nav__list">
@@ -85,17 +84,17 @@
       </div>
     </div>
 
-    <div class="container  container--border">
+    <div class="container">
       <div class="wrapper">
         <div class="features">
           <p class="features__title">Explore the benefits of Veeam integration with NetApp</p>
           <span>Veeam’s <b>enterprise-level, near-continuous data protection (near-CDP)</b> delivers the best recovery time and point objectives (RTPO™) for all applications in VMware vSphere environments. The combination of NetApp’s <b>low RPO</b> capabilities and Veeam’s <b>low RTO</b> enablement allows users to:</span>
           <div class="features__block">
-            <ul class="features__list">
+            <ul class="features__list  features__list--first">
               <li>Create backups from storage snapshots up to <b>20 times faster</b> than competitive offerings</li>
               <li>Improve DR protection by creating instant, secondary backups from storage snapshots</li>
             </ul>
-            <ul class="features__list">
+            <ul class="features__list  features__list--second">
               <li>Recover individual items or entire VMs quickly and efficiently from <b>NetApp Snapshot®, SnapMirror®</b> and <b>SnapVault®</b> with <b>Veeam Explorer™ for Storage Snapshots</b></li>
             </ul>
           </div>
@@ -115,11 +114,11 @@
           </div>
           <span>In addition to fast backups and quick recovery from NetApp Snapshot, SnapMirror and SnapVault, NetApp FAS and FlexArray (V-Series) customers can meet the most stringent RTPO of Tier-1 applications with:</span>
           <div class="features__block">
-            <ul class="features__list">
+            <ul class="features__list  features__list--first">
               <li><b>Fast, application-consistent recovery points</b> by orchestrating NetApp Data ONTAP to create snapshot only backups</li>
               <li><b>Reduce data loss</b> by automating the creation of secondary backups from NetApp SnapVault</li>
             </ul>
-            <ul class="features__list">
+            <ul class="features__list  features__list--second">
               <li><b>Verified protection</b> by automating the testing of backups to guarantee the recoverability of every file, application and virtual machine (VM)</li>
               <li><b>A cloud ready platform</b> that enhances data availability by providing an efficient way to get backups off site to a service provider</li>
             </ul>
@@ -246,7 +245,7 @@
           <div class="features__block  features__block--border  features__block--no-border">
             <p class="features__name">Supported storage:</p>
             <div class="features__about">
-              <div>For NetApp, all Data ONTAP based storage, including:</div>
+              <div class="features__about-title">For NetApp, all Data ONTAP based storage, including:</div>
               <div>
                 <ul>
                   <li>NetApp FAS</li>

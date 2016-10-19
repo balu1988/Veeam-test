@@ -10,11 +10,6 @@
   }
 }
 
-@mixin font-scale($font-size, $line-height) {
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
 @mixin container() {
   width: 320px;
   margin: 0 auto;
@@ -24,6 +19,7 @@
   }
 
   @media #{$desktop-widths} {
-    width: 1200px;
+    width: 940px;
+    padding: 0 16px;
   }
 }

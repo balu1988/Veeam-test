@@ -1,5 +1,5 @@
 .container {
-  padding: 46px 15px;
+  padding: 26px 15px;
 }
 
 .container--grey {
@@ -8,5 +8,29 @@
 
 .container--border {
   padding: 0;
+}
+
+.container--download {
+  padding: 0;
   border-bottom: 4px solid #e9e9e9;
+}
+
+@media #{$tablet-widths} {
+  .container {
+    padding: 20px 0;
+  }
+
+  .container--download {
+    padding: 0;
+  }
+}
+
+@media #{$desktop-widths} {
+  .container {
+    padding: 46px 15px;
+  }
+
+  .container--download {
+    padding: 0;
+  }
 }

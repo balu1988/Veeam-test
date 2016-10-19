@@ -1,5 +1,4 @@
 .header {
-  min-height: 78px;
   border-bottom: 4px solid #09b00a;
   display: -ms-flexbox;
   display: flex;
@@ -7,7 +6,7 @@
 
 .header__logo-block {
   background-color: #ffffff;
-  width: 940px;
+  width: 320px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -24,4 +23,21 @@
   background-color: #ffffff;
   -ms-flex-positive: 1;
       flex-grow: 1;
+}
+
+@media #{$tablet-widths} {
+  .header {
+    min-height: 78px;
+  }
+
+  .header__logo-block {
+    width: 768px;
+  }
+}
+
+
+@media #{$desktop-widths} {
+  .header__logo-block {
+    width: 940px;
+  }
 }

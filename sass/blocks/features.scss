@@ -1,10 +1,19 @@
 .features__block {
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .features__list {
-  width: 50%;
+  width: 100%;
+
+  &--first {
+    margin-bottom: 0;
+  }
+
+  &--second {
+    margin-top: 0;
+  }
 }
 
 .features__list li {
@@ -16,6 +25,7 @@
   line-height: 36px;
   font-weight: bold;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .features__images {
@@ -24,6 +34,7 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 
 .features__link {
@@ -37,7 +48,7 @@
 .features__link--graph::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 8px;
   left: 0;
   width: 32px;
   height: 25px;
@@ -46,7 +57,7 @@
 
 .features__images-block-full {
   margin-top: 20px;
-  margin-bottom: 50px;
+
 }
 
 .features__text-droid {
@@ -71,7 +82,7 @@
 }
 
 .features__block--border {
-  padding: 50px 0;
+  padding: 20px 0;
   border-bottom: 2px solid #cfd5dc;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -80,7 +91,7 @@
 .features__link--list::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 8px;
   left: 0;
   width: 32px;
   height: 25px;
@@ -103,6 +114,7 @@
 .features__about {
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   -ms-flex-pack: justify;
       justify-content: space-between;
@@ -117,7 +129,80 @@
 }
 
 .features__about-text {
-  font-size: 18px;
-  line-height: 28px;
-  padding-right: 16px;
+  font-size: 16px;
+  line-height: 26px;
+  padding-right: 0px;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+.features__about-title {
+  margin-bottom: 20px;
+}
+
+@media #{$tablet-widths} {
+  .features__block {
+    flex-wrap: nowrap;
+  }
+
+  .features__list {
+
+    &--first {
+      margin-bottom: 14px;
+    }
+
+    &--second {
+      margin-top: 14px;
+    }
+  }
+
+  .features__images {
+    flex-wrap: nowrap;
+  }
+
+  .features__block--border {
+    padding: 20px 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .features__link--graph::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 32px;
+    height: 25px;
+    background: url("../img/icon-play.png");
+  }
+
+  .features__link--list::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 32px;
+    height: 25px;
+    background: url("../img/icon-list.png");
+  }
+
+  .features__about {
+    flex-wrap: nowrap;
+  }
+
+  .features__about-title {
+    margin-bottom: 0px;
+  }
+
+  .features__about-text {
+    padding-bottom: 20px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .features__title {
+    text-align: left;
+    margin-top: 0;
+  }
 }
